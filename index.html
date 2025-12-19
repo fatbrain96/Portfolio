@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parakh Kumar Srivastav - Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">Portfolio</div>
+      <ul class="nav-menu">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#internship" class="nav-link">Internship</a></li>
+        <li><a href="#certificates" class="nav-link">Certificates</a></li>
+        <li><a href="#achievements" class="nav-link">Achievements</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Landing Page -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>Hi, I'm <span class="highlight">Parakh Kumar Srivastav</span></h1>
+        <h2 class="tagline"><span id="typing"></span></h2>
+        <p class="hero-intro">
+          BTech Computer Science student passionate about building innovative applications. 
+          I turn ideas into functional, user-friendly solutions with clean code and thoughtful design.
+        </p>
+        <div class="quick-links">
+          <a href="http://github.com/fatbrain96/" target="_blank" class="quick-link">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+          <a href="http://linkedin.com/in/parakh7787/" target="_blank" class="quick-link">
+            <i class="fab fa-linkedin"></i> LinkedIn
+          </a>
+        </div>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="assets/Parakh_CV.pdf" download class="btn btn-secondary">Download Resume</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="code-window">
+          <div class="window-header">
+            <div class="window-dots">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="window-title">main.dart</div>
+          </div>
+          <div class="code-content">
+            <pre><code><span class="code-keyword">import</span> <span class="code-string">'package:flutter/material.dart'</span>;
+
+<span class="code-keyword">class</span> <span class="code-class">MyApp</span> <span class="code-keyword">extends</span> <span class="code-class">StatelessWidget</span> {
+  <span class="code-annotation">@override</span>
+  <span class="code-class">Widget</span> <span class="code-function">build</span>(<span class="code-class">BuildContext</span> context) {
+    <span class="code-keyword">return</span> <span class="code-class">MaterialApp</span>(
+      title: <span class="code-string">'Portfolio'</span>,
+      theme: <span class="code-class">ThemeData</span>(
+        primarySwatch: <span class="code-class">Colors</span>.blue,
+      ),
+    );
+  }
+}</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Me -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="about-wrapper">
+        <div class="about-image">
+          <img src="assets/profile.png" alt="Parakh Kumar Srivastav" class="about-pic">
+        </div>
+        <div class="about-content">
+          <h2 class="section-title">About Me</h2>
+          <p class="about-intro">
+            I'm a BTech Computer Science & Engineering student at Maharana Pratap Engineering College 
+            with hands-on experience in Java, Python, Dart, and Flutter. I enjoy building applications 
+            that solve real-world problems and applying software engineering concepts to create efficient, 
+            user-friendly solutions.
+          </p>
+          <p class="about-intro">
+            From mobile apps to desktop applications, I'm passionate about the 
+            entire development lifecycle—from ideation to deployment. I specialize in creating 
+            cross-platform solutions that deliver exceptional user experiences.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education" class="section section-dark">
+    <div class="container">
+      <h2 class="section-title">Education</h2>
+      
+      <div class="education-list">
+        <!-- BTech -->
+        <div class="education-item">
+          <div class="education-icon">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <div class="education-details">
+            <h3>Bachelor of Technology</h3>
+            <h4>Computer Science & Engineering</h4>
+            <p class="education-institution">Maharana Pratap Engineering College (AKTU)</p>
+            <div class="education-meta">
+              <span class="education-year">Expected 2026</span>
+              <span class="education-grade">CGPA: 7.8</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Intermediate -->
+        <div class="education-item">
+          <div class="education-icon">
+            <i class="fas fa-school"></i>
+          </div>
+          <div class="education-details">
+            <h3>Intermediate</h3>
+            <h4>12th Grade</h4>
+            <p class="education-institution">UP Board</p>
+            <div class="education-meta">
+              <span class="education-year">2022</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- High School -->
+        <div class="education-item">
+          <div class="education-icon">
+            <i class="fas fa-book"></i>
+          </div>
+          <div class="education-details">
+            <h3>High School</h3>
+            <h4>10th Grade</h4>
+            <p class="education-institution">CBSE</p>
+            <div class="education-meta">
+              <span class="education-year">2020</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title">Featured Projects</h2>
+      <p class="section-subtitle">Showcasing my best work in application development</p>
+      
+      <div class="projects-grid">
+        <!-- RouteSync -->
+        <div class="project-card animate">
+          <div class="project-image">
+            <img src="assets/sih.jpg" alt="RouteSync">
+            <div class="project-overlay">
+              <a href="http://github.com/fatbrain96/RouteSync" target="_blank" class="project-link">
+                <i class="fab fa-github"></i> View Code
+              </a>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>ROUTESYNC</h3>
+            <p>Real-time GPS tracking application built for Smart India Hackathon to solve urban bus tracking challenges. Features efficient UI design, continuous location tracking, and deployed for live usage.</p>
+            <div class="project-features">
+              <h4>Key Features:</h4>
+              <ul>
+                <li>Real-time GPS tracking</li>
+                <li>Live bus location updates</li>
+                <li>Station notifications</li>
+                <li>Efficient and responsive UI</li>
+                <li>Deployed for production use</li>
+              </ul>
+            </div>
+            <div class="project-tech">
+              <span class="tech-tag">Flutter</span>
+              <span class="tech-tag">Dart</span>
+              <span class="tech-tag">Firebase</span>
+              <span class="tech-tag">Google Maps API</span>
+              <span class="tech-tag">GPS Integration</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Flappy Bird -->
+        <div class="project-card animate">
+          <div class="project-image">
+            <img src="assets/flappy.png" alt="Flappy Bird Clone">
+            <div class="project-overlay">
+              <a href="https://github.com/fatbrain96/Flappy-Bird-Game" target="_blank" class="project-link">
+                <i class="fab fa-github"></i> View Code
+              </a>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>FLAPPY BIRD CLONE</h3>
+            <p>Classic 2D game recreation with custom physics engine. Implements gravity simulation, precise collision detection, and a custom game loop for smooth gameplay experience.</p>
+            <div class="project-features">
+              <h4>Key Features:</h4>
+              <ul>
+                <li>Gravity physics simulation</li>
+                <li>Collision detection system</li>
+                <li>Custom game loop</li>
+                <li>Score tracking</li>
+                <li>Smooth animations</li>
+              </ul>
+            </div>
+            <div class="project-tech">
+              <span class="tech-tag">Java</span>
+              <span class="tech-tag">Swing</span>
+              <span class="tech-tag">Game Development</span>
+              <span class="tech-tag">Custom Physics</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hospital Management -->
+        <div class="project-card animate">
+          <div class="project-image">
+            <img src="assets/aD.jpeg" alt="Hospital Management">
+            <div class="project-overlay">
+              <a href="https://github.com/fatbrain96/hospital-management" target="_blank" class="project-link">
+                <i class="fab fa-github"></i> View Code
+              </a>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>HOSPITAL MANAGEMENT SYSTEM</h3>
+            <p>Console-based management system for healthcare facilities. Manages patient records, doctor information, and appointments with file handling for data persistence.</p>
+            <div class="project-features">
+              <h4>Key Features:</h4>
+              <ul>
+                <li>Patient record management</li>
+                <li>Doctor information system</li>
+                <li>Appointment scheduling</li>
+                <li>File handling for data storage</li>
+                <li>Menu-driven interface</li>
+              </ul>
+            </div>
+            <div class="project-tech">
+              <span class="tech-tag">C</span>
+              <span class="tech-tag">File Handling</span>
+              <span class="tech-tag">Data Structures</span>
+              <span class="tech-tag">Console Application</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Splitwise -->
+        <div class="project-card animate">
+          <div class="project-image">
+            <img src="assets/split.png" alt="Splitwise Clone">
+            <div class="project-overlay">
+              <a href="https://github.com/fatbrain96/SplitWise" target="_blank" class="project-link">
+                <i class="fab fa-github"></i> View Code
+              </a>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>SPLITWISE CLONE</h3>
+            <p>Expense sharing application for managing group expenses and settling debts efficiently using advanced algorithms.</p>
+            <div class="project-features">
+              <h4>Key Features:</h4>
+              <ul>
+                <li>Expense tracking</li>
+                <li>Group management</li>
+                <li>Debt calculation</li>
+                <li>Settlement suggestions</li>
+                <li>Split optimization</li>
+              </ul>
+            </div>
+            <div class="project-tech">
+              <span class="tech-tag">Java</span>
+              <span class="tech-tag">Data Structures</span>
+              <span class="tech-tag">Algorithms</span>
+              <span class="tech-tag">OOP</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Racing Game -->
+        <div class="project-card animate">
+          <div class="project-image">
+            <img src="assets/car.png" alt="2D Racing Game">
+            <div class="project-overlay">
+              <a href="https://github.com/fatbrain96/2dracegame" target="_blank" class="project-link">
+                <i class="fab fa-github"></i> View Code
+              </a>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>2D RACING GAME</h3>
+            <p>Engaging racing game with obstacle avoidance mechanics and immersive sound effects.</p>
+            <div class="project-features">
+              <h4>Key Features:</h4>
+              <ul>
+                <li>Dynamic obstacles</li>
+                <li>Sound effects</li>
+                <li>Score tracking</li>
+                <li>Increasing difficulty</li>
+                <li>Smooth controls</li>
+              </ul>
+            </div>
+            <div class="project-tech">
+              <span class="tech-tag">Java</span>
+              <span class="tech-tag">Swing</span>
+              <span class="tech-tag">Game Logic</span>
+              <span class="tech-tag">Audio Integration</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quiz App -->
+        <div class="project-card animate">
+          <div class="project-image">
+            <img src="assets/quiz.png" alt="Online Quiz Application">
+            <div class="project-overlay">
+              <a href="https://github.com/fatbrain96/CODING-SAMURAI-INTERNSHIP-TASK/tree/main/OnlineQuizApplication" target="_blank" class="project-link">
+                <i class="fab fa-github"></i> View Code
+              </a>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>ONLINE QUIZ APPLICATION</h3>
+            <p>Interactive quiz platform with timer functionality and comprehensive score tracking system.</p>
+            <div class="project-features">
+              <h4>Key Features:</h4>
+              <ul>
+                <li>Multiple choice questions</li>
+                <li>Timer system</li>
+                <li>Score calculation</li>
+                <li>Result analytics</li>
+                <li>User-friendly interface</li>
+              </ul>
+            </div>
+            <div class="project-tech">
+              <span class="tech-tag">Java</span>
+              <span class="tech-tag">Swing</span>
+              <span class="tech-tag">OOP</span>
+              <span class="tech-tag">Event Handling</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section section-dark">
+    <div class="container">
+      <div class="skills-layout">
+        <!-- Left Column: Technical Skills -->
+        <div class="skills-left">
+          <div class="skills-section">
+            <h2 class="section-title">Technical Skills</h2>
+            
+            <div class="skill-group">
+              <h3 class="skill-group-title">Programming Languages</h3>
+              <div class="skill-bars">
+                <div class="skill-bar-item">
+                  <div class="skill-bar-header">
+                    <span class="skill-name">Java</span>
+                    <span class="skill-percent">85%</span>
+                  </div>
+                  <div class="skill-bar-bg">
+                    <div class="skill-bar-fill" style="width: 85%"></div>
+                  </div>
+                </div>
+                <div class="skill-bar-item">
+                  <div class="skill-bar-header">
+                    <span class="skill-name">Dart</span>
+                    <span class="skill-percent">80%</span>
+                  </div>
+                  <div class="skill-bar-bg">
+                    <div class="skill-bar-fill" style="width: 80%"></div>
+                  </div>
+                </div>
+                <div class="skill-bar-item">
+                  <div class="skill-bar-header">
+                    <span class="skill-name">Python</span>
+                    <span class="skill-percent">75%</span>
+                  </div>
+                  <div class="skill-bar-bg">
+                    <div class="skill-bar-fill" style="width: 75%"></div>
+                  </div>
+                </div>
+                <div class="skill-bar-item">
+                  <div class="skill-bar-header">
+                    <span class="skill-name">C/C++</span>
+                    <span class="skill-percent">70%</span>
+                  </div>
+                  <div class="skill-bar-bg">
+                    <div class="skill-bar-fill" style="width: 70%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill-group">
+              <h3 class="skill-group-title">Frameworks & Tools</h3>
+              <div class="skill-bars">
+                <div class="skill-bar-item">
+                  <div class="skill-bar-header">
+                    <span class="skill-name">Flutter</span>
+                    <span class="skill-percent">80%</span>
+                  </div>
+                  <div class="skill-bar-bg">
+                    <div class="skill-bar-fill" style="width: 80%"></div>
+                  </div>
+                </div>
+                <div class="skill-bar-item">
+                  <div class="skill-bar-header">
+                    <span class="skill-name">Firebase</span>
+                    <span class="skill-percent">70%</span>
+                  </div>
+                  <div class="skill-bar-bg">
+                    <div class="skill-bar-fill" style="width: 70%"></div>
+                  </div>
+                </div>
+                <div class="skill-bar-item">
+                  <div class="skill-bar-header">
+                    <span class="skill-name">Git & GitHub</span>
+                    <span class="skill-percent">75%</span>
+                  </div>
+                  <div class="skill-bar-bg">
+                    <div class="skill-bar-fill" style="width: 75%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill-group">
+              <h3 class="skill-group-title">Development Tools</h3>
+              <div class="tool-icons">
+                <div class="tool-icon-item">
+                  <i class="fas fa-code"></i>
+                  <span>VS Code</span>
+                </div>
+                <div class="tool-icon-item">
+                  <i class="fab fa-android"></i>
+                  <span>Android Studio</span>
+                </div>
+                <div class="tool-icon-item">
+                  <i class="fas fa-laptop-code"></i>
+                  <span>IntelliJ IDEA</span>
+                </div>
+                <div class="tool-icon-item">
+                  <i class="fas fa-terminal"></i>
+                  <span>Postman</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Soft Skills & Interests -->
+        <div class="skills-right">
+          <div class="skills-section">
+            <h3 class="skill-group-title">Core Competencies</h3>
+            <div class="competency-list">
+              <div class="competency-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Object-Oriented Programming</span>
+              </div>
+              <div class="competency-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Data Structures & Algorithms</span>
+              </div>
+              <div class="competency-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Mobile App Development</span>
+              </div>
+              <div class="competency-item">
+                <i class="fas fa-check-circle"></i>
+                <span>RESTful API Integration</span>
+              </div>
+              <div class="competency-item">
+                <i class="fas fa-check-circle"></i>
+                <span>UI/UX Design Principles</span>
+              </div>
+              <div class="competency-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Problem Solving</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills-section">
+            <h3 class="skill-group-title">Soft Skills</h3>
+            <div class="soft-skills-grid">
+              <div class="soft-skill-item">Team Collaboration</div>
+              <div class="soft-skill-item">Communication</div>
+              <div class="soft-skill-item">Time Management</div>
+              <div class="soft-skill-item">Adaptability</div>
+              <div class="soft-skill-item">Critical Thinking</div>
+              <div class="soft-skill-item">Leadership</div>
+            </div>
+          </div>
+
+          <div class="skills-section">
+            <h3 class="skill-group-title">Interests & Hobbies</h3>
+            <div class="interests-grid">
+              <div class="interest-item">
+                <i class="fas fa-code"></i>
+                <span>Coding</span>
+              </div>
+              <div class="interest-item">
+                <i class="fas fa-mobile-alt"></i>
+                <span>App Development</span>
+              </div>
+              <div class="interest-item">
+                <i class="fas fa-book"></i>
+                <span>Reading Tech Blogs</span>
+              </div>
+              <div class="interest-item">
+                <i class="fas fa-futbol"></i>
+                <span>Sports</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience & Internship -->
+  <section id="internship" class="section">
+    <div class="container">
+      <h2 class="section-title">Professional Experience</h2>
+      
+      <div class="experience-timeline">
+        <!-- Current Internship -->
+        <div class="experience-item">
+          <div class="experience-icon">
+            <i class="fas fa-briefcase"></i>
+          </div>
+          <div class="experience-content">
+            <div class="experience-header">
+              <div>
+                <h3>App Development Intern</h3>
+                <h4>Bright Infonet</h4>
+              </div>
+              <span class="experience-period">Oct 2025 - Present</span>
+            </div>
+            
+            <div class="experience-details">
+              <p class="experience-desc">
+                Working on the Frndsup social networking application, a platform designed to connect people 
+                and facilitate meaningful interactions. Contributing to both frontend and backend development 
+                while ensuring optimal performance and user experience.
+              </p>
+              
+              <div class="experience-section">
+                <h5>Key Responsibilities:</h5>
+                <ul class="experience-list">
+                  <li>Developing and maintaining features for the Frndsup mobile application using Flutter and Dart</li>
+                  <li>Integrating RESTful APIs for real-time data synchronization and user authentication</li>
+                  <li>Implementing responsive UI components following Material Design guidelines</li>
+                  <li>Optimizing app performance and reducing load times by 30%</li>
+                  <li>Fixing critical UI/UX bugs and improving overall user experience</li>
+                  <li>Collaborating with cross-functional teams in Agile development environment</li>
+                  <li>Participating in code reviews and implementing best coding practices</li>
+                  <li>Writing unit tests to ensure code quality and reliability</li>
+                </ul>
+              </div>
+
+              <div class="experience-section">
+                <h5>Technologies Used:</h5>
+                <div class="tech-stack">
+                  <span class="tech-badge">Flutter</span>
+                  <span class="tech-badge">Dart</span>
+                  <span class="tech-badge">Firebase</span>
+                  <span class="tech-badge">REST APIs</span>
+                  <span class="tech-badge">Git</span>
+                  <span class="tech-badge">Postman</span>
+                </div>
+              </div>
+
+              <div class="experience-section">
+                <h5>Key Achievements:</h5>
+                <ul class="achievement-list">
+                  <li>Successfully implemented user profile management system</li>
+                  <li>Reduced app crash rate by 40% through bug fixes and optimization</li>
+                  <li>Improved API response handling and error management</li>
+                  <li>Contributed to 15+ feature releases during internship period</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Smart India Hackathon -->
+        <div class="experience-item">
+          <div class="experience-icon">
+            <i class="fas fa-trophy"></i>
+          </div>
+          <div class="experience-content">
+            <div class="experience-header">
+              <div>
+                <h3>Team Lead & Developer</h3>
+                <h4>Smart India Hackathon 2024</h4>
+              </div>
+              <span class="experience-period">2024</span>
+            </div>
+            
+            <div class="experience-details">
+              <p class="experience-desc">
+                Led a team of 6 members to develop RouteSync, a real-time bus tracking solution 
+                addressing urban transportation challenges.
+              </p>
+              
+              <div class="experience-section">
+                <h5>Contributions:</h5>
+                <ul class="experience-list">
+                  <li>Architected and developed the complete mobile application using Flutter</li>
+                  <li>Implemented real-time GPS tracking and route optimization algorithms</li>
+                  <li>Designed intuitive UI/UX for seamless user experience</li>
+                  <li>Presented solution to government officials and industry experts</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certificates -->
+  <section id="certificates" class="section section-dark">
+    <div class="container">
+      <h2 class="section-title">Certifications & Training</h2>
+      
+      <div class="certificates-layout">
+        <!-- Technical Certifications -->
+        <div class="cert-category">
+          <h3 class="cert-category-title">Technical Certifications</h3>
+          
+          <div class="cert-item">
+            <div class="cert-icon">
+              <i class="fab fa-java"></i>
+            </div>
+            <div class="cert-details">
+              <h4>Programming in Java</h4>
+              <p class="cert-issuer">NPTEL (National Programme on Technology Enhanced Learning)</p>
+              <p class="cert-date">2025</p>
+              <p class="cert-description">
+                Comprehensive course covering core Java concepts, OOP principles, exception handling, 
+                collections framework, and advanced Java programming techniques.
+              </p>
+            </div>
+          </div>
+
+          <div class="cert-item">
+            <div class="cert-icon">
+              <i class="fas fa-robot"></i>
+            </div>
+            <div class="cert-details">
+              <h4>Programming with Generative AI</h4>
+              <p class="cert-issuer">NPTEL</p>
+              <p class="cert-date">2025</p>
+              <p class="cert-description">
+                Advanced course on leveraging AI tools for code generation, understanding LLMs, 
+                and integrating AI capabilities into software development workflows.
+              </p>
+            </div>
+          </div>
+
+          <div class="cert-item">
+            <div class="cert-icon">
+              <i class="fab fa-python"></i>
+            </div>
+            <div class="cert-details">
+              <h4>Python Programming Training</h4>
+              <p class="cert-issuer">IIT Kanpur</p>
+              <p class="cert-date">2024</p>
+              <p class="cert-description">
+                Intensive training program covering Python fundamentals, data structures, 
+                file handling, and practical application development.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Professional Development -->
+        <div class="cert-category">
+          <h3 class="cert-category-title">Professional Development</h3>
+          
+          <div class="cert-item">
+            <div class="cert-icon">
+              <i class="fas fa-laptop-code"></i>
+            </div>
+            <div class="cert-details">
+              <h4>Software Engineering Virtual Experience</h4>
+              <p class="cert-issuer">Accenture</p>
+              <p class="cert-date">2025</p>
+              <p class="cert-description">
+                Virtual internship program covering software development lifecycle, agile methodologies, 
+                and real-world project scenarios in enterprise environment.
+              </p>
+            </div>
+          </div>
+
+          <div class="cert-item">
+            <div class="cert-icon">
+              <i class="fas fa-chart-bar"></i>
+            </div>
+            <div class="cert-details">
+              <h4>Data Visualization: Empowering Business with Effective Insights</h4>
+              <p class="cert-issuer">TATA</p>
+              <p class="cert-date">2025</p>
+              <p class="cert-description">
+                Learned data visualization techniques, dashboard creation, and presenting 
+                data-driven insights for business decision making.
+              </p>
+            </div>
+          </div>
+
+          <div class="cert-item">
+            <div class="cert-icon">
+              <i class="fas fa-brain"></i>
+            </div>
+            <div class="cert-details">
+              <h4>Generative AI Job Simulation</h4>
+              <p class="cert-issuer">TATA</p>
+              <p class="cert-date">2025</p>
+              <p class="cert-description">
+                Hands-on experience with generative AI tools, prompt engineering, 
+                and practical applications in business scenarios.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements -->
+  <section id="achievements" class="section section-dark">
+    <div class="container">
+      <h2 class="section-title">Achievements & Leadership</h2>
+      <div class="achievements-grid">
+        <div class="achievement-card">
+          <div class="achievement-icon">
+            <i class="fas fa-trophy"></i>
+          </div>
+          <h3>Event Organizer</h3>
+          <p>Organized and coordinated multiple college technical and cultural events</p>
+        </div>
+        <div class="achievement-card">
+          <div class="achievement-icon">
+            <i class="fas fa-medal"></i>
+          </div>
+          <h3>Sports Representative</h3>
+          <p>Represented MPEC in various inter-college sports tournaments</p>
+        </div>
+        <div class="achievement-card">
+          <div class="achievement-icon">
+            <i class="fas fa-award"></i>
+          </div>
+          <h3>Tournament Finalist</h3>
+          <p>Achieved finalist positions in multiple competitive tournaments</p>
+        </div>
+        <div class="achievement-card">
+          <div class="achievement-icon">
+            <i class="fas fa-comments"></i>
+          </div>
+          <h3>Debate Competition</h3>
+          <p>Secured top rank in inter-college debate competition</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section section-dark">
+    <div class="container">
+      <h2 class="section-title">Get In Touch</h2>
+      
+      <div class="contact-oneliner">
+        <div class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <a href="mailto:srivastavparakhkumar@gmail.com">srivastavparakhkumar@gmail.com</a>
+        </div>
+        
+        <div class="contact-divider"></div>
+        
+        <div class="contact-item">
+          <i class="fas fa-phone"></i>
+          <a href="tel:+918707541619">+91 87075 41619</a>
+        </div>
+        
+        <div class="contact-divider"></div>
+        
+        <div class="contact-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>Uttar Pradesh, India</span>
+        </div>
+      </div>
+
+      <div class="social-links-row">
+        <a href="http://github.com/fatbrain96/" target="_blank" class="social-link-item">
+          <i class="fab fa-github"></i>
+          <span>GitHub</span>
+        </a>
+        <a href="https://leetcode.com/srivastavparakhkumar" target="_blank" class="social-link-item">
+          <i class="fas fa-laptop-code"></i>
+          <span>LeetCode</span>
+        </a>
+        <a href="https://codolio.com/profile/ParakhSrivastava" target="_blank" class="social-link-item">
+          <i class="fas fa-terminal"></i>
+          <span>Codolio</span>
+        </a>
+        <a href="http://linkedin.com/in/parakh7787/" target="_blank" class="social-link-item">
+          <i class="fab fa-linkedin"></i>
+          <span>LinkedIn</span>
+        </a>
+      </div>
+      
+      <div class="resume-download">
+        <a href="assets/Parakh_CV.pdf" download class="btn btn-primary">
+          <i class="fas fa-download"></i> Download Resume
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; Parakh Kumar Srivastav</p>
+  </footer>
+</body>
+</html>
